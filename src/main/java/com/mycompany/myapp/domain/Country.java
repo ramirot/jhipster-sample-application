@@ -2,6 +2,7 @@ package com.mycompany.myapp.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -24,6 +25,9 @@ public class Country implements Serializable {
 
     @Column(name = "country_name")
     private String countryName;
+
+    @Column(name = "code", unique = true)
+    private String code;
 
     @OneToOne
     @JoinColumn(unique = true)
@@ -55,6 +59,19 @@ public class Country implements Serializable {
 
     public void setCountryName(String countryName) {
         this.countryName = countryName;
+    }
+
+    public String getCode() {
+        return this.code;
+    }
+
+    public Country code(String code) {
+        this.setCode(code);
+        return this;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public Region getRegion() {
@@ -95,6 +112,7 @@ public class Country implements Serializable {
         return "Country{" +
             "id=" + getId() +
             ", countryName='" + getCountryName() + "'" +
+            ", code='" + getCode() + "'" +
             "}";
     }
 }
