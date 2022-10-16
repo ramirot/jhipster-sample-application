@@ -8,6 +8,11 @@
     {
       "fieldName": "countryName",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
   "fluentMethods": true,

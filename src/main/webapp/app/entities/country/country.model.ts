@@ -3,6 +3,7 @@ import { IRegion } from 'app/entities/region/region.model';
 export interface ICountry {
   id: number;
   countryName?: string | null;
+  code?: string | null;
   region?: Pick<IRegion, 'id'> | null;
 }
 

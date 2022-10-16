@@ -2,19 +2,22 @@ import { ICountry, NewCountry } from './country.model';
 
 export const sampleWithRequiredData: ICountry = {
   id: 4746,
+  code: 'SCSI Configuration deposit',
 };
 
 export const sampleWithPartialData: ICountry = {
-  id: 86879,
-  countryName: 'Automotive Pakistan Engineer',
+  id: 17392,
+  code: 'Japan engineer',
 };
 
 export const sampleWithFullData: ICountry = {
-  id: 63753,
-  countryName: 'content 1080p',
+  id: 14843,
+  countryName: 'Mandatory',
+  code: 'Profound Shoes',
 };
 
 export const sampleWithNewData: NewCountry = {
+  code: 'Nebraska Program panel',
   id: null,
 };
 
