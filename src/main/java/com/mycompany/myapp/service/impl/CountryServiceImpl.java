@@ -47,6 +47,9 @@ public class CountryServiceImpl implements CountryService {
                 if (country.getCountryName() != null) {
                     existingCountry.setCountryName(country.getCountryName());
                 }
+                if (country.getCode() != null) {
+                    existingCountry.setCode(country.getCode());
+                }
 
                 return existingCountry;
             })

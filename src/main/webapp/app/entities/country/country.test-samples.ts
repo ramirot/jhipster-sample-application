@@ -5,13 +5,15 @@ export const sampleWithRequiredData: ICountry = {
 };
 
 export const sampleWithPartialData: ICountry = {
-  id: 86879,
-  countryName: 'Automotive Pakistan Engineer',
+  id: 87057,
+  countryName: 'Configuration',
+  code: 'Tasty Tuna',
 };
 
 export const sampleWithFullData: ICountry = {
-  id: 63753,
-  countryName: 'content 1080p',
+  id: 44167,
+  countryName: 'engineer Computer',
+  code: 'knowledge deposit',
 };
 
 export const sampleWithNewData: NewCountry = {
